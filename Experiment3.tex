@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{xeCJK}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{ulem}
+
+% 设置中文字体
+\setCJKmainfont{SimSun}
+\setCJKfamilyfont{xingkai}{STXingkai}
+\newcommand{\xingkai}{\CJKfamily{xingkai}}
+
+% 设置页面
+\geometry{a4paper, margin=2.5cm, headheight=15pt} % 增加headheight
+
+% 设置页眉页脚
+\pagestyle{fancy}
+\fancyhf{} % 清除所有页眉页脚
+\fancyhead[L]{\small 2025-2026学年秋季学期}
+\fancyhead[C]{\small 期末考试} % 页眉中间
+\fancyhead[R]{\small 本科生试题专用纸}
+\fancyfoot[C]{\thepage} % 页脚中间显示页码
+
+% 自定义横线
+\newcommand{\customline}{\noindent\rule{\textwidth}{0.4pt}}
+
+\begin{document}
+
+% 试卷部分
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+    \begin{center}
+        {\xingkai\Huge 中国科学院大学} \\[24pt]
+        {\LARGE 试 题 专 用 纸}
+    \end{center}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+    \begin{flushleft}
+        \textbf{\large 课程编号：}课程编码 \\[12pt]
+        \textbf{\large 课程名称：}课程名称 \\[12pt]
+        \textbf{\large 任课教师：}任课教师 \\[12pt]
+    \end{flushleft}
+\end{minipage}
+
+% 横线
+\vspace{24pt}
+\customline
+
+\vspace{24pt}
+
+% 正文标题
+\begin{center}
+    \LARGE \textbf{标题名称}
+\end{center}
+
+\section{}
+
+\end{document}
